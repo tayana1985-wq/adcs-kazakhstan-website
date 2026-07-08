@@ -63,8 +63,8 @@ for (const file of htmlFiles) {
     errors.push(`${file} must include ./style.css`);
   }
 
-  if (!text.includes('src="./assets/adcs-logo-official.png"')) {
-    errors.push(`${file} must include logo from ./assets`);
+  if (!text.includes('src="./adcs-logo-official.png"')) {
+    errors.push(`${file} must include official logo from the repository root`);
   }
 
   for (const match of text.matchAll(/(?:href|src)="([^"]+)"/g)) {
@@ -83,7 +83,11 @@ for (const file of htmlFiles) {
 
 const cssText = fs.readFileSync(path.join(root, "style.css"), "utf8");
 if (/url\(["']?assets\//.test(cssText)) {
-  errors.push("style.css must use ./assets/... in url() paths");
+  errors.push("style.css must use explicit relative paths for local images");
+}
+
+if (!cssText.includes('url("./adcs-watermark-a.jpg")')) {
+  errors.push("style.css must use the root watermark file ./adcs-watermark-a.jpg");
 }
 
 if (errors.length > 0) {
