@@ -29,16 +29,16 @@
   }
 
   function getBaseFile(file) {
-    return file.replace(/-(kz|en)(?=\.html$)/, "");
+    return file.replace(/^\.\//, "").replace(/-(kz|en)(?=\.html$)/, "");
   }
 
   function getRouteByFile(file) {
     var baseFile = getBaseFile(file);
     return routes.find(function (route) {
-      return route.href === baseFile;
+      return route.href.replace(/^\.\//, "") === baseFile;
     }) || routes.find(function (route) {
       return route.key === "home";
-    }) || { key: "home", href: "index.html" };
+    }) || { key: "home", href: "./index.html" };
   }
 
   function localizeHref(href, lang) {
@@ -47,10 +47,10 @@
     }) || languages[0];
     var suffix = language.suffix || "";
     var parts = String(href).split("#");
-    var file = parts[0];
+    var file = parts[0].replace(/^\.\//, "");
     var hash = parts[1] ? "#" + parts[1] : "";
     if (!/\.html$/.test(file)) return href;
-    return file.replace(/-(kz|en)?\.html$/, ".html").replace(/\.html$/, suffix + ".html") + hash;
+    return "./" + file.replace(/-(kz|en)?\.html$/, ".html").replace(/\.html$/, suffix + ".html") + hash;
   }
 
   function getMenuLabel(key, lang) {

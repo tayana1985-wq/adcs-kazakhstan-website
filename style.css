@@ -35,7 +35,7 @@ body::before {
   z-index: 0;
   width: min(760px, 72vw);
   height: min(440px, 48vw);
-  background-image: url("assets/adcs-watermark-a.jpg");
+  background-image: url("./assets/adcs-watermark-a.jpg");
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;

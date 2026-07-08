@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "python3 -m http.server 5173",
-    "build": "echo \"No build required\"",
-    "vercel-build": "echo \"No build required\""
+    "build": "node scripts/validate-site.mjs"
   }
 }

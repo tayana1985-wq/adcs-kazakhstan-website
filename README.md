@@ -48,7 +48,27 @@ node scripts/validate-site.mjs
 6. Output Directory: оставьте пустым или укажите корень проекта.
 7. Нажмите `Deploy`.
 
-Файл `vercel.json` уже добавлен. Он включает clean URLs для публикации на Vercel.
+Файл `vercel.json` уже добавлен. Clean URLs отключены, чтобы статические `.html`-маршруты не ломали относительные подключения CSS, JS и assets.
+
+## Публикация на GitHub Pages
+
+1. Создайте репозиторий на GitHub.
+2. Загрузите содержимое этой папки в ветку `main`.
+3. В настройках репозитория откройте `Settings` -> `Pages`.
+4. Source: `Deploy from a branch`.
+5. Branch: `main`, folder: `/root`.
+6. Сохраните настройки и дождитесь публикации.
+
+Для GitHub Pages добавлен файл `.nojekyll`, чтобы GitHub не обрабатывал сайт через Jekyll.
+
+## Публикация через Netlify Drop
+
+1. Откройте Netlify Drop.
+2. Перетащите всю папку `CorporateSportWebsite` в окно загрузки.
+3. Build-команда не нужна.
+4. Publish directory не нужен, потому что `index.html` находится в корне папки.
+
+Все локальные подключения используют относительные пути `./style.css`, `./data.js`, `./site.js`, `./assets/...`.
 
 ## Где редактировать сайт
 
