@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADCS KZ | Виды спорта и форматы</title>
+  <link rel="icon" href="assets/adcs-logo-square.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="ADCS KZ">
+      <img src="assets/adcs-logo-wide.jpeg" alt="ADCS Kazakhstan">
+      <span>ADCS KZ</span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="adcs-world.html">ADCS World</a>
+        <a href="companies.html">Для компаний</a>
+        <a href="methodology.html">Методология</a>
+        <a class="is-active" href="sports.html" aria-current="page">Виды спорта</a>
+        <a href="calendar.html">Календарь</a>
+        <a href="astana-2027.html">Астана 2027</a>
+        <a href="partners.html">Партнёрам</a>
+        <a href="team.html">Команда</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <nav class="language-switch" aria-label="Выбор языка">
+        <a class="is-active" href="sports.html" aria-current="true">RU</a>
+        <a href="index-kz.html">KZ</a>
+        <a href="index-en.html">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="section-inner narrow">
+        <p class="eyebrow">Виды спорта и форматы</p>
+        <h1>Каталог дисциплин ADCS Kazakhstan</h1>
+        <p>
+          ADCS Kazakhstan развивает корпоративный спорт в разных форматах — от массовых турниров
+          для сотрудников до семейных игр, отраслевых соревнований и международных корпоративных
+          стартов.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="contacts.html#request">Запросить регламент</a>
+          <a class="button button-secondary" href="calendar.html">Соревнования и календарь</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner agenda-card">
+        <p class="section-label">Как мы подбираем дисциплины</p>
+        <h2>Под задачу компании, а не ради списка</h2>
+        <p>
+          Мы подбираем виды спорта под задачи компании: вовлечение сотрудников, укрепление
+          командного духа, развитие HR-бренда, ESG-Social, семейное участие, подготовку к
+          национальным и международным корпоративным играм.
+        </p>
+        <p class="note">
+          Корпоративный спорт — это не только соревнования. Это система, которая объединяет людей,
+          команды, семьи и компании вокруг культуры здоровья.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="section-inner">
+        <p class="section-label">Каталог</p>
+        <h2>Фильтр по направлениям</h2>
+        <div data-render="sports-catalog"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 ADCS KZ. Все права защищены.</p>
+  </footer>
+  <script src="data.js" defer></script>
+  <script src="site.js" defer></script>
+</body>
+</html>

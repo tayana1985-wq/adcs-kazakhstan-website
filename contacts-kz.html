@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADCS KZ | Контакты и заявка</title>
+  <link rel="icon" href="assets/adcs-logo-square.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="ADCS KZ">
+      <img src="assets/adcs-logo-wide.jpeg" alt="ADCS Kazakhstan">
+      <span>ADCS KZ</span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="adcs-world.html">ADCS World</a>
+        <a href="companies.html">Для компаний</a>
+        <a href="methodology.html">Методология</a>
+        <a href="sports.html">Виды спорта</a>
+        <a href="calendar.html">Календарь</a>
+        <a href="astana-2027.html">Астана 2027</a>
+        <a href="partners.html">Партнёрам</a>
+        <a href="team.html">Команда</a>
+        <a class="is-active" href="contacts.html" aria-current="page">Контакты</a>
+      </nav>
+
+      <nav class="language-switch" aria-label="Выбор языка">
+        <a class="is-active" href="contacts.html" aria-current="true">RU</a>
+        <a href="contacts-kz.html">KZ</a>
+        <a href="contacts-en.html">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="section-inner narrow">
+        <p class="eyebrow">Контакты</p>
+        <h1>Оставить заявку в ADCS Kazakhstan</h1>
+        <p>
+          Свяжитесь с нами по вопросам участия, партнерства, аудита, презентации или подготовки к
+          Астане 2027.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner contact-panel">
+        <div>
+          <p class="section-label">Контактная информация</p>
+          <h2>ADCS Kazakhstan</h2>
+          <p class="section-lead">
+            Основные контакты Ассоциации. WhatsApp работает на том же номере телефона.
+          </p>
+        </div>
+
+        <dl data-render="contacts"></dl>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="request">
+      <div class="section-inner">
+        <p class="section-label">Форма заявки</p>
+        <h2>Оставить запрос</h2>
+        <form class="request-form" data-static-form>
+          <div class="form-grid">
+            <label>Название компании<input type="text" name="company" autocomplete="organization"></label>
+            <label>Город<input type="text" name="city" autocomplete="address-level2"></label>
+            <label>ФИО контактного лица<input type="text" name="name" autocomplete="name"></label>
+            <label>Должность<input type="text" name="position"></label>
+            <label>Телефон / WhatsApp<input type="tel" name="phone" autocomplete="tel"></label>
+            <label>Email<input type="email" name="email" autocomplete="email"></label>
+            <label>Тема запроса
+              <select name="topic">
+                <option>Зарегистрировать команду</option>
+                <option>Стать партнёром</option>
+                <option>Заказать аудит</option>
+                <option>Запросить презентацию</option>
+                <option>Связаться с ADCS Kazakhstan</option>
+              </select>
+            </label>
+            <label>Количество предполагаемых участников<input type="number" name="participants" min="1"></label>
+          </div>
+          <label>Комментарий<textarea name="comment" rows="5"></textarea></label>
+          <button class="button button-primary" type="submit">Отправить заявку</button>
+          <p class="form-note" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 ADCS KZ. Все права защищены.</p>
+  </footer>
+  <script src="data.js" defer></script>
+  <script src="site.js" defer></script>
+</body>
+</html>

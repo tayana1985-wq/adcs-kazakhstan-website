@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADCS KZ | Соревнования и календарь</title>
+  <link rel="icon" href="assets/adcs-logo-square.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="ADCS KZ">
+      <img src="assets/adcs-logo-wide.jpeg" alt="ADCS Kazakhstan">
+      <span>ADCS KZ</span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="adcs-world.html">ADCS World</a>
+        <a href="companies.html">Для компаний</a>
+        <a href="methodology.html">Методология</a>
+        <a href="sports.html">Виды спорта</a>
+        <a class="is-active" href="calendar.html" aria-current="page">Календарь</a>
+        <a href="astana-2027.html">Астана 2027</a>
+        <a href="partners.html">Партнёрам</a>
+        <a href="team.html">Команда</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <nav class="language-switch" aria-label="Выбор языка">
+        <a class="is-active" href="calendar.html" aria-current="true">RU</a>
+        <a href="index-kz.html">KZ</a>
+        <a href="index-en.html">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="section-inner narrow">
+        <p class="eyebrow">Соревнования и календарь</p>
+        <h1>Форматы и события ADCS Kazakhstan</h1>
+        <p>
+          Соревнования — это форматы: корпоративные турниры, лиги, спартакиады, семейные игры и
+          международные выезды. Календарь — это конкретные направления, даты и статусы.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="contacts.html#request">Оставить заявку</a>
+          <a class="button button-secondary" href="astana-2027.html">Астана 2027</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Календарь направлений</p>
+        <h2>Moscow 2026 / Baku / Astana 2027 / корпоративные турниры</h2>
+        <div data-render="events"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="section-inner content-grid">
+        <article class="content-block">
+          <p class="section-label">Форматы соревнований</p>
+          <h2>Что может быть в календаре компании</h2>
+          <p>
+            ADCS Kazakhstan помогает собрать календарь под задачи бизнеса: от внутренних лиг до
+            международной подготовки, от производственной гимнастики до семейных игр.
+          </p>
+        </article>
+
+        <ul class="check-list">
+          <li>корпоративные турниры и лиги;</li>
+          <li>спартакиады и отраслевые соревнования;</li>
+          <li>семейные спортивные дни и игры;</li>
+          <li>национальный календарь ADCS Kazakhstan;</li>
+          <li>международные выезды и подготовка к Астане 2027.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 ADCS KZ. Все права защищены.</p>
+  </footer>
+  <script src="data.js" defer></script>
+  <script src="site.js" defer></script>
+</body>
+</html>

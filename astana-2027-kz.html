@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADCS KZ | Астана 2027</title>
+  <link rel="icon" href="assets/adcs-logo-square.jpeg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-logo" href="index.html" aria-label="ADCS KZ">
+      <img src="assets/adcs-logo-wide.jpeg" alt="ADCS Kazakhstan">
+      <span>ADCS KZ</span>
+    </a>
+
+    <div class="header-actions">
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="adcs-world.html">ADCS World</a>
+        <a href="companies.html">Для компаний</a>
+        <a href="methodology.html">Методология</a>
+        <a href="sports.html">Виды спорта</a>
+        <a href="calendar.html">Календарь</a>
+        <a class="is-active" href="astana-2027.html" aria-current="page">Астана 2027</a>
+        <a href="partners.html">Партнёрам</a>
+        <a href="team.html">Команда</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+
+      <nav class="language-switch" aria-label="Выбор языка">
+        <a class="is-active" href="astana-2027.html" aria-current="true">RU</a>
+        <a href="index-kz.html">KZ</a>
+        <a href="index-en.html">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero astana-hero">
+      <div class="hero-content">
+        <p class="eyebrow">Астана 2027</p>
+        <h1>IV ADCS World Corporate Games — Астана 2027</h1>
+        <p class="hero-text">
+          Казахстан принимает международное корпоративное спортивное движение. Астана 2027 должна
+          стать событием, которое объединит бизнес, международную повестку, сотрудников, семьи и
+          спортивное сообщество.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#registration">Зарегистрировать команду</a>
+          <a class="button button-secondary" href="partners.html">Стать партнёром</a>
+          <a class="button button-secondary" href="contacts.html#request">Запросить презентацию</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner content-grid">
+        <article class="content-block">
+          <p class="section-label">О событии</p>
+          <h2>Почему это важно для Казахстана и бизнеса</h2>
+          <p>
+            Астана 2027 — это возможность для Казахстана задать новый стандарт корпоративного
+            спорта в регионе и показать, что бизнес выходит на международную арену через своих
+            людей: сотрудников, команды, семьи и корпоративную культуру.
+          </p>
+        </article>
+
+        <ul class="check-list">
+          <li>национальные компании;</li>
+          <li>частный бизнес;</li>
+          <li>международные компании;</li>
+          <li>отраслевые команды;</li>
+          <li>сотрудники и семьи сотрудников.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="section-inner">
+        <p class="section-label">Виды спорта</p>
+        <h2>Дисциплины и семейные форматы</h2>
+        <div data-render="sport-categories"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Форматы участия</p>
+        <h2>Кто может войти в проект</h2>
+        <div class="card-grid">
+          <article class="data-card"><span class="tag">Участие</span><h3>Компания-участник</h3><p>Компания заявляет корпоративную команду и участвует в выбранных дисциплинах.</p></article>
+          <article class="data-card"><span class="tag">Команда</span><h3>Корпоративная команда</h3><p>Сотрудники компании выступают в командных и индивидуальных видах спорта.</p></article>
+          <article class="data-card"><span class="tag">Семья</span><h3>Семейная команда</h3><p>Родители, дети и семьи сотрудников участвуют в специальных семейных форматах.</p></article>
+          <article class="data-card"><span class="tag">Партнерство</span><h3>Партнёр или спонсор</h3><p>Бренд получает статус и интеграцию в спортивную, деловую или семейную программу.</p></article>
+          <article class="data-card"><span class="tag">Поддержка</span><h3>Волонтёр</h3><p>Участие в организации, сопровождении команд и сервисах мероприятия.</p></article>
+          <article class="data-card"><span class="tag">Медиа</span><h3>Медиа-партнёр</h3><p>Информационная поддержка Игр, участников и международной повестки.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="registration">
+      <div class="section-inner">
+        <p class="section-label">Регистрация</p>
+        <h2>Предварительная заявка на Астана 2027</h2>
+        <p class="section-lead">
+          Официальная регистрация на Астана 2027 будет открыта после утверждения организационных
+          условий. Вы можете оставить предварительную заявку, и команда ADCS Kazakhstan свяжется с вами.
+        </p>
+        <form class="request-form" data-static-form>
+          <div class="form-grid">
+            <label>Название компании<input type="text" name="company" autocomplete="organization"></label>
+            <label>Город<input type="text" name="city" autocomplete="address-level2"></label>
+            <label>ФИО контактного лица<input type="text" name="name" autocomplete="name"></label>
+            <label>Должность<input type="text" name="position"></label>
+            <label>Телефон / WhatsApp<input type="tel" name="phone" autocomplete="tel"></label>
+            <label>Email<input type="email" name="email" autocomplete="email"></label>
+            <label>Количество предполагаемых участников<input type="number" name="participants" min="1"></label>
+            <label>Интересующие виды спорта<input type="text" name="sports"></label>
+          </div>
+          <label>Комментарий<textarea name="comment" rows="5"></textarea></label>
+          <button class="button button-primary" type="submit">Отправить заявку</button>
+          <p class="form-note" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Партнёрские возможности</p>
+        <h2>Статусы для брендов и организаций</h2>
+        <div data-render="partners"></div>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="section-inner">
+        <p class="section-label">Ценовые пакеты</p>
+        <h2>Структура готова, суммы будут опубликованы позже</h2>
+        <p class="section-lead">
+          Ценовая политика и регистрационные пакеты будут опубликованы после утверждения
+          организационного комитета. Для предварительного участия компания может оставить заявку.
+        </p>
+        <div data-render="pricing"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">FAQ</p>
+        <h2>Частые вопросы</h2>
+        <div class="stacked-list">
+          <article><span>01</span><h3>Кто может участвовать?</h3><p>Компании, корпоративные команды, сотрудники, отраслевые сборные и семейные команды сотрудников.</p></article>
+          <article><span>02</span><h3>Можно ли участвовать семьям?</h3><p>Да, семейные форматы — важная часть философии ADCS Kazakhstan и ESG-Social повестки.</p></article>
+          <article><span>03</span><h3>Когда откроется регистрация?</h3><p>После утверждения организационных условий. Сейчас можно оставить предварительную заявку.</p></article>
+          <article><span>04</span><h3>Где получить условия участия?</h3><p>Через форму заявки, WhatsApp или email ADCS Kazakhstan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section astana-section">
+      <div class="section-inner narrow">
+        <p class="section-label">Контакты оргкомитета</p>
+        <h2>Связаться по Астане 2027</h2>
+        <p>Напишите нам, чтобы обсудить участие команды, партнерский статус или презентацию проекта.</p>
+        <div class="inline-actions">
+          <a class="button button-light" href="contacts.html#request">Связаться с ADCS Kazakhstan</a>
+          <a class="button button-outline-light" href="partners.html">Получить партнёрский пакет</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 ADCS KZ. Все права защищены.</p>
+  </footer>
+  <script src="data.js" defer></script>
+  <script src="site.js" defer></script>
+</body>
+</html>
